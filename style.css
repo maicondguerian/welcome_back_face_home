@@ -15,9 +15,8 @@ body {
 .container {
     max-width: 1080px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-
+    display: flex;
+    flex-direction: row;
 }
 
 h1 {
@@ -29,14 +28,15 @@ h1 {
 
 .login {
     width: 396px;
-    padding: 16px 16px 28 16px;
-    margin: 40px 0 0;
+    height:auto;
+    padding: 16px 16px 20px 16px;
+    margin: 40px 0 0 0;
     align-items: center;
     border: none;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgb(0 0 0 / 10%);
-    padding: 16px;
     background-color: #ffffff;
+    
 }
 
 p,
@@ -102,14 +102,18 @@ input[placeholder] {
     color: #ffff;
     cursor: pointer;
     transition: 200ms cubic-bezier(.08, .52, .52, 1);
+    align-items: center;
 }
 
 .nova_conta {
 
     padding: 11px;
     background-color: #42b72a;
-    margin-bottom: 16px;
     margin-top: 16px;
+    left: 50%;
+    position: relative;
+    margin-left: -78px;
+
 } 
 
 .link {
